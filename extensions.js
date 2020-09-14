@@ -6,13 +6,13 @@
 */
 module.exports = function parseExtension(ext) {
     switch (ext) {
-        case "html":
+        case "html": case "htm":
             return "text/html";
             break;
         case "svg":
             return "image/svg+xml";
             break;
-        case "js":
+        case "js": case "mjs":
             return "text/javascript";
             break;
         case "json":
@@ -109,6 +109,24 @@ module.exports = function parseExtension(ext) {
             break;
         case "tar":
             return "application/x-tar";
+            break;
+        case "bmp":
+            return "image/bmp";
+            break;
+        case "avi":
+            return "video/x-msvideo";
+            break;
+        case "doc":
+            return "application/msword";
+            break;
+        case "docx":
+            return "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+            break;
+        case "gz":
+            return "application/gzip";
+            break;
+        case "jar":
+            return "application/java-archive";
             break;
     }
 }
