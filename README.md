@@ -6,9 +6,3 @@
 #### It only supports static pages and JS.
 
 #### All settings are inside config.json, and are easy enough to comprehend for anyone above the age of 13.
-
-### Requirements
-#### You need the following NPM packages;
-* http
-* fs
-* os
